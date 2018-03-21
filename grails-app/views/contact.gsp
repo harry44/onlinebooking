@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="layout" content="main"/>
+<meta name="layout" content="theme"/>
 </head>
 <body>
 		
