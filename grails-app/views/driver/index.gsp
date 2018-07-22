@@ -51,7 +51,7 @@
 						<td>${fieldValue(bean: driverInstance, field: "driverName")}</td>
 					
 						<td>
-						<img  src="${createLink(controller:'Driver', action:'showImage', id:"${driverInstance.id}")}" width='100' alt="No logo" />
+						<img  src="${createLink(controller:'Driver', action:'showImage', id:"${driverInstance.id}")}" style="width:100px;height:100px;" alt="No logo" />
 						</td>
 					
 						<td>${fieldValue(bean: driverInstance, field: "emailId")}</td>

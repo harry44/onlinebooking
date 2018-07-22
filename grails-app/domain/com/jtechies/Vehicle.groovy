@@ -6,7 +6,7 @@ class Vehicle {
 Integer id 
 String plateNumber
 VehicleGroup vehicleGroup
-
+Company company
 
 ///////////////// Default fields //////////////
 Date dateCreated

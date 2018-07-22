@@ -13,8 +13,8 @@
 	<link rel="stylesheet" href="${resource(dir:'css',file:'flexslider.css') }" type="text/css" media="all" />
 	<link href="${resource(dir:'css',file:'style.css') }" rel="stylesheet" type="text/css" media="all" />
 	<link href="${resource(dir:'css',file:'font-awesome.css')}" rel="stylesheet"> 
-	<link rel="stylesheet" href="css/jquery-ui.css" />
-<link href="css/bookingstyle.css" rel="stylesheet" type="text/css" media="all"/>
+	<link rel="stylesheet" href="${resource(dir:'css',file:'jquery-ui.css')}" />
+<link href="${resource(dir:'css',file:'bookingstyle.css')}" rel="stylesheet" type="text/css" media="all"/>
 <!-- //For Testimonials slider -->
 <!-- googlefonts -->
 <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
@@ -24,7 +24,7 @@
 		<g:layoutHead/>
 	</head>
 	<body>
-		<g:render template="layouts/headerMenu"></g:render>
+		<g:render template="//layouts/headerMenu"></g:render>
 		<g:layoutBody/>
 		<div class="footer" role="contentinfo"></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
@@ -32,7 +32,7 @@
 		<!-- js -->
 	<script type="text/javascript" src="${resource(dir:'js',file:'jquery-2.1.4.min.js') }"></script>
 	<!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
+	<script src="${resource(dir:'js',file:'bootstrap.js')}"></script>
 	<!-- //for bootstrap working -->
 <!-- //js -->
 <!-- //here starts scrolling icon -->
@@ -115,7 +115,7 @@
 
 
 <!-- //Calendar -->
-											<script src="js/jquery-ui.js"></script>
+											<script src="${resource(dir:'js',file:'jquery-ui.js')}"></script>
 											  <script>
 													  $(function() {
 														$( "#datepicker,#datepicker1" ).datepicker();
@@ -123,7 +123,7 @@
 											  </script>
 								<!-- //Calendar -->
 <!--script-->
-<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
+<script src="${resource(dir:'js',file:'easyResponsiveTabs.js')}" type="text/javascript"></script>
 		    <script type="text/javascript">
 			    $(document).ready(function () {
 			        $('#horizontalTab').easyResponsiveTabs({

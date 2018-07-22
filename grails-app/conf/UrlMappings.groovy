@@ -7,13 +7,16 @@ class UrlMappings {
             }
         }
 
+		"/" {
+			controller = "searchController"
+			action = "/$controller/$action"
+		 }
         "/"(view:"/index")
 		"/index"(view:"/index")
 		"/about"(view:"/about")
 		"/contact"(view:"/contact")
 		"/typography"(view:"/typography")
 		"/gallery"(view:"/gallery")
-		"/booking"(view:"/booking")
 		"/icons"(view:"/icons")
 		
         "500"(view:'/error')

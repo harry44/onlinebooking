@@ -3,6 +3,7 @@ package com.jtechies
 
 
 import static org.springframework.http.HttpStatus.*
+import grails.converters.JSON
 import grails.transaction.Transactional
 
 @Transactional(readOnly = true)
@@ -18,6 +19,18 @@ class LocationController {
     def show(Location locationInstance) {
         respond locationInstance
     }
+	def ajaxCityFinder = {
+		def citiesFound = Location.withCriteria {
+			  ilike 'cityName', params.term + '%'
+			 }
+		def cityMap=[:]
+		citiesFound.each{
+			cityMap[it.id]=it.cityName
+			
+		}
+		println cityMap
+	  render (cityMap as JSON)
+	 }
 
     def create() {
         respond new Location(params)

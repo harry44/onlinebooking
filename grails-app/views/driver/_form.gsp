@@ -1,6 +1,6 @@
 <%@ page import="com.jtechies.Driver" %>
 
-
+<g:countrySelect/>
 
 <div class="fieldcontain ${hasErrors(bean: driverInstance, field: 'contactNumber', 'error')} required">
 	<label for="contactNumber">
