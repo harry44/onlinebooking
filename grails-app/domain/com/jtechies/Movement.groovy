@@ -7,6 +7,8 @@ class Movement {
    Vehicle vehicle
    Date startDate
    Date EndDate
+   Date dateCreated
+   Date LastUpdated
    
    
     static constraints = {
